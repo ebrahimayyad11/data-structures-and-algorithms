@@ -1,0 +1,1 @@
+![](array-reverse/code-01.png)
