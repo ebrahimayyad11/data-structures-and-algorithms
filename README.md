@@ -6,3 +6,5 @@
 |--------------|----|
 |array-reverse|[Click here to open](array-reverse/README)|
 |array-shift|[Click here to open](array-shift/README)|
+|array-binary-search|[Click here to open](array-binary-search/README)|
+
