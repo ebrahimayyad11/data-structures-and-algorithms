@@ -1,4 +1,33 @@
-# Singly Linked List
+# Challenge 6
+## Challenge
+* to create three functions (append,insert_after,insert_before)
+
+## whiteboard process
+### Append
+![](whiteboard/code-06_append.png)
+### Insert Before
+![](whiteboard/code-06_before.png)
+### Insert After
+![](whiteboard/code-06_after.png)
+
+
+
+## Approach & Efficiency
+* append: time: O(n) space: O(1)
+* insert_after: time: O(n) space: O(1)
+* insert_before: time: O(n) space: O(1)
+
+
+## solution 
+* append: to add a new node to the end of the linked list
+* insert_after: to add a new node after the chosen node
+* insert_before: to add a new node before the chosen node
+ 
+
+
+
+# Challenge 5
+## Singly Linked List
 The linked list is alternative to an array-based structure. A linked list is collection of nodes that collectively form linear sequence. In a singly linked list, each node stores a reference to an object that is an element of the sequence, as well as a reference to the next node of the list. It does not store any pointer or reference to the previous node. To store a single linked list, only the reference or pointer to the first node in that list must be stored. The last node in a single linked list points to nothing.
 
 ## Challenge
