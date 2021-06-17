@@ -4,10 +4,11 @@
 ### Table of content
 |code challenge|Link|
 |--------------|----|
-|array-reverse|[Click here to open](https://github.com/ebrahimayyad11/data-structures-and-algorithms/blob/main/array-reverse/README.md)|
-|array-shift|[Click here to open](https://github.com/ebrahimayyad11/data-structures-and-algorithms/blob/main/array-shift/README.md)|
-|array-binary-search|[Click here to open](https://github.com/ebrahimayyad11/data-structures-and-algorithms/blob/main/array-binary-search/README.md)|
-|linked-list|[Click here to open](https://github.com/ebrahimayyad11/data-structures-and-algorithms/blob/main/Data-Structure/challenge-05/README.md)|
+|array-reverse|[Click here to open](array-reverse/README.md)|
+|array-shift|[Click here to open](array-shift/README.md)|
+|array-binary-search|[Click here to open](array-binary-search/README.md)|
+|linked-list|[Click here to open](Data-Structures/linked-list/README.md)|
+|ll-insertions|[Click here to open](Data-Structures/linked-list/README.md)|
 
 
 

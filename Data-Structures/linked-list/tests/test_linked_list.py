@@ -59,7 +59,7 @@ def test_str():  # 8
     ll.append(0)
     ll.insert(74)
     ll.__str__()
-    assert ll.__str__() == " { 74 } -> { True } -> { a } -> { 0 }  -> NULL "
+    assert ll.__str__() == "{74} -> {True} -> {a} -> {0} -> NULL"
 
 
 def test_include():  # 9
@@ -71,10 +71,62 @@ def test_include():  # 9
     assert ll.include('test') == False
 
 
-def test_include_2():  # 10
-    ll = LinkedList()
-    ll.append(True)
-    ll.append('ebrahim')
-    ll.append(0)
-    ll.insert(74)
-    assert ll.include('ebrahim') == True
+
+
+
+def test_add_node_to_end_of_linked_list():
+    lnk_lst=LinkedList()
+    excepted= 8
+    actual = lnk_lst.append(8)
+    # actual = lnk_lst
+    assert excepted==actual
+
+def test_add_multiple_nodes_to_end_of_linked_list():
+    lnk_lst=LinkedList()
+    lnk_lst.append(8)
+    lnk_lst.append(3)
+    lnk_lst.append('b')
+    excepted='{8} -> {3} -> {b} -> NULL'
+    actual=lnk_lst.__str__()
+    assert excepted==actual
+
+def test_insert_node_before_node_middle_of_linked_list():
+    lnk_lst=LinkedList()
+    lnk_lst.append(8)
+    lnk_lst.append(3)
+    lnk_lst.append('b')
+    lnk_lst.append('4')
+    lnk_lst.insert_before('b',7)
+    excepted='{8} -> {3} -> {7} -> {b} -> {4} -> NULL'
+    actual=lnk_lst.__str__()
+    assert excepted==actual
+
+
+def test_insert_node_before_the_first_node():
+    lnk_lst=LinkedList()
+    lnk_lst.append(8)
+    lnk_lst.append(3)
+    lnk_lst.insert_before(8,'a')
+    excepted='{a} -> {8} -> {3} -> NULL'
+    actual=lnk_lst.__str__()
+    assert excepted==actual
+
+def test_insert_after_node_middle_of_linked_list():
+    lnk_lst=LinkedList()
+    lnk_lst.append(8)
+    lnk_lst.append(3)
+    lnk_lst.append('b')
+    lnk_lst.append('4')
+    lnk_lst.insert_after('b',7)
+    excepted='{8} -> {3} -> {b} -> {7} -> {4} -> NULL'
+    actual=lnk_lst.__str__()
+    assert excepted==actual
+
+def test_insert_node_after_last_node():
+    lnk_lst=LinkedList()
+    lnk_lst.append(8)
+    lnk_lst.append(3)
+    lnk_lst.insert_after(8,'a')
+    excepted='{8} -> {a} -> {3} -> NULL'
+    actual=lnk_lst.__str__()
+    assert excepted==actual

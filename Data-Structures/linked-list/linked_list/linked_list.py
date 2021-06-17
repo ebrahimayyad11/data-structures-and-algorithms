@@ -1,3 +1,6 @@
+import linked_list
+
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -35,21 +38,22 @@ class LinkedList:
             node.next = current
             self.node_lst.insert(0, self.head.value)
 
-    def append(self, value):
+    def append(self,value):
         """
         Adds a node of a value to the end of LL
         """
-        node = Node(value)
-        if not self.head:
-            self.head = node
-            self.node_lst.append(self.head.value)
-        else:
-            current = self.head
-            while current.next != None:
-                current = current.next
-            current.next = node
-            self.node_lst.append(current.next.value)
 
+        current=self.head
+        if self.head ==None:
+            self.head=Node(value)
+            return self.head.value
+        else:
+            while current.next:
+                current=current.next
+            current.next=Node(value)
+            return current.next
+      
+       
     def include(self, value):
         """
         Return True or False if value is in the linked list or not
@@ -59,35 +63,60 @@ class LinkedList:
         else:
             return False
 
+    
+        
     def __str__(self):
         # "{ a } -> { b } -> { c } -> NULL"
-
-        strr = ''
-        for x in range(len(self.node_lst)):
-            if x == 0:
-                strr += ' { ' + str((self.node_lst[x])) + ' } -> '
-            elif x == len(self.node_lst)-1:
-                strr += '{ '+str((self.node_lst[x])) + ' }  -> NULL '
-            else:
-                strr += '{ '+str((self.node_lst[x])) + ' } -> '
-
-        return strr
-
+        if self.head == None:
+            return 'NULL'
+        else :
+            values=''
+            temporary_value=self.head
+            while temporary_value:
+                values+='{'+ f'{temporary_value.value}' +'} ' + '-> ' 
+                temporary_value=temporary_value.next
+            values=values +'NULL'
+            return f'{values}'
     def __repr__(self):
         return 'Nothing'
+    
+
+    def insert_before(self,val,new_val):
+        try:
+            current=self.head
+            if self.head ==None:
+                self.head=Node(val)
+                return self.head
+            elif current.value == val:
+                       self.insert(new_val)
+            else:
+                while current: 
+                    if  current.next.value== val:
+                        saved_current_val=current.next
+                        current.next=Node(new_val)
+                        current.next.next=saved_current_val 
+                        return current.next
+                    current=current.next
+        except:
+            raise Exception ('Error')
 
 
-if __name__ == "__main__":
-    # Instances of Node
-    n1 = Node(34)
-    # n2 = Node('Suhaib')
-    n3 = Node(True)
+    
+    def insert_after(self,val,new_val):
+            try:
+                current=self.head
+                if self.head ==None:
+                  self.head=Node(val)
+                  return self.head
+                else:
+                  while current: 
+                    if  current.value== val:
+                        saved_current_val=current.next
+                        current.next=Node(new_val)
+                        current.next.next=saved_current_val 
+                        return current.next
+                    current=current.next
+            except:
+                raise Exception ('Error')
 
-    ll = LinkedList()
-    # Value of first node on head
-    ll.append(4)
-    # next of head (next of Node(4)) is Null
-    ll.append(-1)
-    ll.append('s')
-    ll.insert('ebrahim')
-    print(ll.__str__())
+
