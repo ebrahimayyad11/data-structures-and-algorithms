@@ -11,6 +11,7 @@
 |ll-insertions|[Click here to open](Data-Structures/linked-list/README.md)|
 |kthFromEnd|[Click here to open](Data-Structures/linked-list/README.md)|
 |ll-zip|[Click here to open](challenges/ll-zip/ll-zip/README.md)|
+|Stacks-and-Queues|[Click here to open](Data-Structures/stack-and-queue/README.md)|
 
 
 
