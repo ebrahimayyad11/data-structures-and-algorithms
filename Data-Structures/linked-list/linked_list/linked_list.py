@@ -31,12 +31,12 @@ class LinkedList:
         node = Node(value)
         if self.head is None:
             self.head = node
-            self.node_lst.insert(0, self.head.value)
+            self.node_lst += [self.head.value]
         else:
             current = self.head
             self.head = node
             node.next = current
-            self.node_lst.insert(0, self.head.value)
+            self.node_lst += [self.head.value]
 
     def append(self,value):
         """
@@ -46,11 +46,13 @@ class LinkedList:
         current=self.head
         if self.head ==None:
             self.head=Node(value)
+            self.node_lst += [value]
             return self.head.value
         else:
             while current.next:
                 current=current.next
             current.next=Node(value)
+            self.node_lst += [value]
             return current.next
       
        
@@ -121,8 +123,8 @@ class LinkedList:
 
     
     def kthFromEnd(self,k):
-        if k < 0:
-            print(len(self.node_lst),k)
+        if k < 0 or k >= len(self.node_lst):
+            return "Unavailable Index"
         else:
             arr=[]
             current = self.head
