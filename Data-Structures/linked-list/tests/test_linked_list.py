@@ -132,38 +132,38 @@ def test_insert_node_after_last_node():
     assert excepted==actual
 
 
-def kthFromEnd_test1():
+def test_kthFromEnd_1():
     lnk_lst=LinkedList()
-    lnk_lst.append(1)
-    lnk_lst.append(3)
-    lnk_lst.append(8)
-    lnk_lst.append(2)
+    lnk_lst.insert(1)
+    lnk_lst.insert(3)
+    lnk_lst.insert(8)
+    lnk_lst.insert(2)
     excepted=2
-    actual=lnk_lst.kthFormEnd(0)
+    actual=lnk_lst.kthFromEnd(0)
     assert excepted==actual
 
 
 
 
-def kthFromEnd_test2():
+def test_kthFromEnd_2():
     lnk_lst=LinkedList()
     lnk_lst.append(1)
     lnk_lst.append(3)
     lnk_lst.append(8)
     lnk_lst.append(2)
     excepted=3
-    actual=lnk_lst.kthFormEnd(2)
+    actual=lnk_lst.kthFromEnd(2)
     assert excepted==actual
 
 
     
-def kthFromEnd_test1():
+def test_kthFromEnd_3():
     lnk_lst=LinkedList()
     lnk_lst.append(1)
     lnk_lst.append(3)
     lnk_lst.append(8)
     lnk_lst.append(2)
     excepted='Unavailable Index'
-    actual=lnk_lst.kthFormEnd(6)
+    actual=lnk_lst.kthFromEnd(6)
     assert excepted==actual
 

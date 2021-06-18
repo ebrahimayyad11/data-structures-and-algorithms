@@ -121,15 +121,15 @@ class LinkedList:
 
     
     def kthFromEnd(self,k):
-        if k < 0 or k >= len(self.node_lst):
-            return 'Unavailable Index'
+        if k < 0:
+            print(len(self.node_lst),k)
         else:
             arr=[]
-            index = 0
-            for i in self.node_lst:
-                arr += str(0)
-                arr[index] = i
-                index += 1
+            current = self.head
+            while current:
+                arr += [current.value]
+                current = current.next
+            arr = arr[::-1]
             return arr[k]
 
 
