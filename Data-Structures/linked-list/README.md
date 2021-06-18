@@ -1,3 +1,19 @@
+# Challenge 7
+
+## Challenge Summary
+* to create a function kthFromEnd(index) that return the value of the node in reverse
+
+## Whiteboard Process
+![](whiteboard/code-07.png)
+
+## Approach & Efficiency
+time: O(n)
+space: O(1)
+
+## Solution
+to convert the linked list to and array and get the reverse of the array and return the array of the index that the user entered
+
+
 # Challenge 6
 ## Challenge
 * to create three functions (append,insert_after,insert_before)

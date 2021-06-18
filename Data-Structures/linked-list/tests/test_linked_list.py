@@ -130,3 +130,40 @@ def test_insert_node_after_last_node():
     excepted='{8} -> {a} -> {3} -> NULL'
     actual=lnk_lst.__str__()
     assert excepted==actual
+
+
+def kthFromEnd_test1():
+    lnk_lst=LinkedList()
+    lnk_lst.append(1)
+    lnk_lst.append(3)
+    lnk_lst.append(8)
+    lnk_lst.append(2)
+    excepted=2
+    actual=lnk_lst.kthFormEnd(0)
+    assert excepted==actual
+
+
+
+
+def kthFromEnd_test2():
+    lnk_lst=LinkedList()
+    lnk_lst.append(1)
+    lnk_lst.append(3)
+    lnk_lst.append(8)
+    lnk_lst.append(2)
+    excepted=3
+    actual=lnk_lst.kthFormEnd(2)
+    assert excepted==actual
+
+
+    
+def kthFromEnd_test1():
+    lnk_lst=LinkedList()
+    lnk_lst.append(1)
+    lnk_lst.append(3)
+    lnk_lst.append(8)
+    lnk_lst.append(2)
+    excepted='Unavailable Index'
+    actual=lnk_lst.kthFormEnd(6)
+    assert excepted==actual
+

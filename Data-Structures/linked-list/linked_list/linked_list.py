@@ -119,4 +119,24 @@ class LinkedList:
             except:
                 raise Exception ('Error')
 
+    
+    def kthFromEnd(self,k):
+        if k < 0 or k >= len(self.node_lst):
+            return 'Unavailable Index'
+        else:
+            arr=[]
+            index = 0
+            for i in self.node_lst:
+                arr += str(0)
+                arr[index] = i
+                index += 1
+            return arr[k]
+
+
+
+            
+            
+
+
+
 
