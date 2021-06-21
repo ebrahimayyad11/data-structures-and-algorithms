@@ -1,5 +1,5 @@
 import sys
-sys.path.append("//data-structures-and-algorithms/Data-Structures/stack-and-queue")
+sys.path.append("/home/ebrahimayyad11/data-structures-and-algorithms/Data-Structures/stack-and-queue")
 from stack_and_queue.stack_and_queue import Stack
 
 
