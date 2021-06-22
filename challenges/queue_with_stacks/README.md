@@ -17,4 +17,4 @@ to write a dequeue and enqueue functions
 
 ## Solution
 ### enqueue: to add the new value to the top of the stack_in
-### dequeue: to pop the top if the stack_out
+### dequeue: to pop the top if the stack_out then return the top of stack_out then return the The rest data
