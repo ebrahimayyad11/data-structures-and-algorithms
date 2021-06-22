@@ -11,8 +11,9 @@ def test_enqueue():
     st.enqueue(20)
     st.enqueue(15)
     st.enqueue(10)
-    actual = st.enqueue(5)
-    excepted = '[5] -> [10] -> [15] -> [20]'  + '\n' + '[5]' 
+    st.enqueue(5)
+    actual = [st.dequeue(),st.dequeue(),st.dequeue(),st.dequeue()]
+    excepted = ['[20]','[15]','[10]','[5]'] 
     assert actual == excepted
 
 
@@ -23,7 +24,7 @@ def test_dequeue_1():
     st.enqueue(10)
     st.enqueue(5)
     actual = st.dequeue()
-    excepted = 5
+    excepted = '[20]'
     assert actual == excepted
 
 
@@ -33,5 +34,5 @@ def test_dequeue_2():
     st.enqueue(10)
     st.enqueue(5)
     actual = st.dequeue()
-    excepted = 10
+    excepted = '[15]'
     assert actual == excepted
