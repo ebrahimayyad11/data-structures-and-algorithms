@@ -5,7 +5,7 @@ to write a function that take a string and return true if the open and close bra
 ![](whiteboard/code-13.png)
 
 ## Approach & Efficiency
-Time: O(n)
+Time: O(n^3)
 Space: O(1)
 
 ## Solution

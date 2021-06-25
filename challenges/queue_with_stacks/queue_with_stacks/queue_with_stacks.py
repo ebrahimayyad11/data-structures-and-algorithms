@@ -26,3 +26,5 @@ class PseudoQueue:
                 self.stack_in.push(self.stack_out.pop())
                 current2 = self.stack_out.top
             return f'[{result}]'
+
+    
