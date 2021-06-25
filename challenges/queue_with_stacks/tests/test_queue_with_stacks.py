@@ -36,3 +36,5 @@ def test_dequeue_2():
     actual = st.dequeue()
     excepted = '[15]'
     assert actual == excepted
+
+
