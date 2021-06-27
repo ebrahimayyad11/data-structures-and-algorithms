@@ -7,10 +7,25 @@ its a group of nodes that have a root and the nodes that are in the left to the 
 
 ## Approach & Efficiency
 Time : O(n)
-space : O()
+space : O(1)
 
 ## API
 * add function: it will check if the root is empty it will add the new value to the root else it will check if the new value is more or less than the root if less it will start the same operation from the left node and if more it will do the same operation from the right node
 * pre-order function: it will take the value of the current node the move to the left and then to the right
 * in-order function: it will take the value of the left of the current node then the value of the current node then the right of the current node and its return the values in Ascending order
-* post-order function: it will take the value of the left of the current node then the right of the current node then the value of the current node  
+* post-order function: it will take the value of the left of the current node then the right of the current node then the value of the current node
+
+
+
+# Tree max
+to write a function that return the maximum value inside the Tree
+
+## Whiteboard Process
+![](./whiteboard/code-16.png)
+
+## Approach & Efficiency
+Time : O(n)
+space : O(1)
+
+## Solution
+to write a function inside the main function and call it for all the nodes inside the Tree then return the max value

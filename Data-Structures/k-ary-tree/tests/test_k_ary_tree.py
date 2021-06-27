@@ -1,5 +1,5 @@
 from k_ary_tree import __version__
-from k_ary_tree.k_ary_tree import Binary_Tree,Binary_Search_Tree
+from k_ary_tree.k_ary_tree import Binary_Tree,Binary_Search_Tree,Node
 
 
 def test_version():
@@ -56,3 +56,15 @@ def test_post_order():
     excepted = [9,11,10]
     assert actual == excepted
 
+
+def test_tree_max():
+    tree = Binary_Tree()
+    tree.root = Node(5)
+    tree.root.left = Node(6)
+    tree.root.left.right = Node(7)
+    tree.root.right = Node(9)
+    tree.root.right.left = Node(5)
+    tree.root.left.right.right = Node(18)
+    actual = tree.tree_max()
+    excepted = 18
+    assert actual == excepted

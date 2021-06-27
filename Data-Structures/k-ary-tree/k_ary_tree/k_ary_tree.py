@@ -72,6 +72,27 @@ class Binary_Tree:
             return final_result 
         except:
             print("something went wrong please try again")
+    
+    
+    def tree_max(self):
+     if self.root:
+      max = self.root.value
+      def tree(node):
+        nonlocal max
+        if node.value > max:
+            max = node.value
+        if node.left:
+            tree(node.left)
+        if node.right:
+            tree(node.right)
+        return max
+      return tree(self.root)
+     else:
+         return "The Tree is Empty"
+
+
+    
+         
 
 
 
@@ -130,12 +151,12 @@ class Binary_Search_Tree(Binary_Tree):
 
 
 if __name__ == '__main__':
-    tree = Binary_Search_Tree()
-    tree.add(5)
-    tree.add(6)
-    tree.add(7)
-    tree.add(4)
-    tree.add(3)
-    print(tree.pre_order())
-    print(tree.in_order())
-    print(tree.post_order())
+    tree = Binary_Tree()
+    tree.root = Node(5)
+    tree.root.left = Node(6)
+    tree.root.left.right = Node(7)
+    tree.root.right = Node(9)
+    tree.root.right.left = Node(5)
+    tree.root.left.right.right = Node(18)
+    print(tree.tree_max())
+    
