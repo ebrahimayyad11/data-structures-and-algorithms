@@ -15,4 +15,6 @@
 |queue_with_stacks|[Click here to open](challenges/queue_with_stacks/README.md)|
 |fifo-animal-shelter|[Click here to open](challenges/fifo-animal-shelter/README.md)|
 |multi-bracket-validation|[Click here to open](challenges/multi-bracket-validation/README.md)|
+|Trees|[Click here to open](Data-Structures/k-ary-tree/README.md)|
+|Tree-max|[Click here to open](Data-Structures/k-ary-tree/README.md)|
 
