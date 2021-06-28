@@ -2,7 +2,7 @@
 to list of all values in the tree, in the order they were encountered
 
 ## Whiteboard Process
-
+![](./whiteboard/code-17.png)
 
 ## Approach & Efficiency
 Time: O(n)
