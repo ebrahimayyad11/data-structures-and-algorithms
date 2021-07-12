@@ -20,3 +20,4 @@
 |Tree-Breadth-First|[Click here to open](challenges/tree-breadth-first/README.md)|
 |tree-fizz-buzz|[Click here to open](challenges/tree-fizz-buzz/README.md)|
 |insertion-sort|[Click here to open](challenges/insertion-sort/README.md)|
+|merge-sort|[Click here to open](challenges/merge-sort/README.md)|
