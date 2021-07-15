@@ -22,3 +22,4 @@
 |insertion-sort|[Click here to open](challenges/insertion-sort/README.md)|
 |merge-sort|[Click here to open](challenges/merge-sort/README.md)|
 |quick-sort|[Click here to open](challenges/quick-sort/README.md)|
+|hash-table|[Click here to open](Data-Structures/hash-table/README.md)|
