@@ -23,3 +23,4 @@
 |merge-sort|[Click here to open](challenges/merge-sort/README.md)|
 |quick-sort|[Click here to open](challenges/quick-sort/README.md)|
 |hash-table|[Click here to open](Data-Structures/hash-table/README.md)|
+|hashmap-repeated-word|[Click here to open](challenges/hashmap-repeated-word/README.md)|
