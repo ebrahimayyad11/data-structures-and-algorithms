@@ -24,3 +24,5 @@
 |quick-sort|[Click here to open](challenges/quick-sort/README.md)|
 |hash-table|[Click here to open](Data-Structures/hash-table/README.md)|
 |hashmap-repeated-word|[Click here to open](challenges/hashmap-repeated-word/README.md)|
+|hashmap-tree-intersection|[Click here to open](challenges/hashmap-tree-intersection/README.md)|
+|hashmap-left-join|[Click here to open](challenges/hashmap-left-join/README.md)|
