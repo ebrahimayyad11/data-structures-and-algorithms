@@ -26,3 +26,4 @@
 |hashmap-repeated-word|[Click here to open](challenges/hashmap-repeated-word/README.md)|
 |hashmap-tree-intersection|[Click here to open](challenges/hashmap-tree-intersection/README.md)|
 |hashmap-left-join|[Click here to open](challenges/hashmap-left-join/README.md)|
+|graph|[Click here to open](Data-Structures/graph/README.md)|
