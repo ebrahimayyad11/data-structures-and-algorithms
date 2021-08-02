@@ -1,3 +1,8 @@
+import sys
+sys.path.append("/home/ebrahimayyad11/data-structures-and-algorithms/Data-Structures/stack-and-queue")
+from stack_and_queue.stack_and_queue import Queue
+
+
 class Vertix:
     def __init__(self, value):
         self.value = value
@@ -48,6 +53,29 @@ class Graph:
     
     def size(self):
         return len(list(self.adjacency_list.keys()))
+
+
+    def breadth_first(self, node):
+        nodes=[]
+        queue= Queue()
+        visited= set()
+
+        if node not in self.adjacency_list or self.adjacency_list[node]==[]:
+            return None
+
+        queue.enqueue(node)
+        visited.add(node.value)
+        
+        while not queue.isEmpty():
+            vertix=queue.dequeue()
+            nodes.append(vertix.value)
+
+            for edge in self.adjacency_list[vertix]:
+                if  edge.vertix.value not in visited:
+                    visited.add(edge.vertix.value)
+                    queue.enqueue(edge.vertix)
+        
+        return nodes
 
     def __str__(self):
         output = ''
